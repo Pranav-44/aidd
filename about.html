@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Pranav's background, career goals, and passion for technology">
+    <title>About Pranav - Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">Pranav's Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" aria-current="page">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">☰</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>About Me</h1>
+                <p>Discover my journey, passions, and aspirations in the world of technology</p>
+            </div>
+        </section>
+
+        <!-- About Content -->
+        <section class="section">
+            <div class="container">
+                <div class="grid grid-2">
+                    <div>
+                        <img src="images/WhatsApp Image 2025-10-04 at 10.21.11 PM.jpeg" alt="Pranav's professional headshot" class="profile-image">
+                    </div>
+                    <div>
+                        <h2>Hello, I'm Pranav</h2>
+                        <p>MS in Information Systems candidate at Indiana University’s Kelley School of Business (Dec 2026, GPA 3.7/4.0). Former Technical Solutions Engineer at Comviva, where I supported high‑throughput telecom platforms and analytics-driven operations.</p>
+                        <p>I care about building reliable systems, clear data flows, and pragmatic tooling that improve performance and decisions. I enjoy working across data, infrastructure, and product to deliver measurable outcomes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Background Section -->
+        <section class="section">
+            <div class="container">
+                <h2>My Background</h2>
+                <div class="grid grid-2">
+                    <div class="card">
+                        <h3>Education</h3>
+                        <p><strong>Kelley School of Business, Indiana University</strong> — MSIS (Dec 2026). Certificates in IS Foundations (databases, project management, infrastructure) and Business Foundations (strategy, finance, operations, marketing).</p>
+                    </div>
+                    <div class="card">
+                        <h3>Experience</h3>
+                        <p><strong>Comviva (Technical Solutions Engineer):</strong> safeguarded €500K+/day data pipelines for Airtel, delivered scalable SMS gateway solutions, and improved platform reliability using SQL, Linux tooling, and reporting automation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Goals Section -->
+        <section class="section">
+            <div class="container">
+                <h2>Focus Areas</h2>
+                <div class="grid grid-3">
+                    <div class="card">
+                        <h3>Reliable Data Systems</h3>
+                        <p>Designing and operating pipelines with strong observability, graceful failure handling, and clear SLIs/SLOs.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Analytics for Decisions</h3>
+                        <p>Turning operational data into actionable insights through validation, modeling, and lean reporting.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Pragmatic Engineering</h3>
+                        <p>Prioritizing maintainability, measurable impact, and clear communication across stakeholders.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interests Section -->
+        <section class="section">
+            <div class="container">
+                <h2>Beyond Coding</h2>
+                <p>When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or enjoying outdoor activities. I believe in maintaining a healthy work-life balance and finding inspiration in diverse experiences.</p>
+                
+                <div class="grid grid-2">
+                    <div class="card">
+                        <h3>Continuous Learning</h3>
+                        <p>I'm always exploring new programming languages, frameworks, and tools. Currently, I'm particularly interested in AI/ML integration, cloud architecture, and mobile development.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Community Involvement</h3>
+                        <p>I enjoy participating in tech meetups, contributing to open-source projects, and sharing knowledge with the developer community through blogging and mentoring.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="section">
+            <div class="container">
+                <h2>Let's Connect</h2>
+                <p>I'm always excited to discuss new opportunities, collaborate on interesting projects, or simply connect with fellow developers and technology enthusiasts.</p>
+                <a href="contact.html" class="btn">Get In Touch</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/Pranav-44" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">GitHub</a>
+                <a href="https://www.linkedin.com/in/pranavdandagi/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">LinkedIn</a>
+                <a href="mailto:pdandagi@iu.edu" aria-label="Email Contact">Email</a>
+            </div>
+            <p>&copy; 2024 Pranav's Portfolio. All rights reserved.</p>
+            <p><a href="https://github.com/pranav/portfolio" target="_blank" rel="noopener noreferrer">View Source Code on GitHub</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileToggle = document.querySelector('.mobile-menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            
+            if (mobileToggle && navLinks) {
+                mobileToggle.addEventListener('click', function() {
+                    navLinks.classList.toggle('active');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
+

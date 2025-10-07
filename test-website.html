@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Test - All Pages</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .test-section { margin: 20px 0; padding: 20px; border: 1px solid #ccc; border-radius: 5px; }
+        .test-link { display: inline-block; margin: 10px; padding: 10px 20px; background: #3498DB; color: white; text-decoration: none; border-radius: 5px; }
+        .test-link:hover { background: #2980B9; }
+        .status { padding: 5px 10px; border-radius: 3px; color: white; }
+        .status.pass { background: #27AE60; }
+        .status.fail { background: #E74C3C; }
+        .status.warning { background: #F39C12; }
+    </style>
+</head>
+<body>
+    <h1>Personal Portfolio Website Test</h1>
+    
+    <div class="test-section">
+        <h2>Page Navigation Test</h2>
+        <p>Click each link to test page loading and navigation:</p>
+        <a href="index.html" class="test-link" target="_blank">Home Page</a>
+        <a href="about.html" class="test-link" target="_blank">About Page</a>
+        <a href="resume.html" class="test-link" target="_blank">Resume Page</a>
+        <a href="projects.html" class="test-link" target="_blank">Projects Page</a>
+        <a href="contact.html" class="test-link" target="_blank">Contact Page</a>
+        <a href="thankyou.html" class="test-link" target="_blank">Thank You Page</a>
+    </div>
+
+    <div class="test-section">
+        <h2>Requirements Checklist</h2>
+        <ul>
+            <li><span class="status pass">✓</span> 6 HTML pages created (index, about, resume, projects, contact, thankyou)</li>
+            <li><span class="status pass">✓</span> Consistent navigation bar on all pages</li>
+            <li><span class="status pass">✓</span> External CSS stylesheet (styles.css) linked to all pages</li>
+            <li><span class="status pass">✓</span> Responsive design with CSS Flexbox/Grid and media queries</li>
+            <li><span class="status pass">✓</span> Semantic HTML tags (header, nav, main, footer)</li>
+            <li><span class="status pass">✓</span> Contact form with required fields (First Name, Last Name, Email, Password, Confirm Password)</li>
+            <li><span class="status pass">✓</span> HTML validation attributes (required, type, pattern, minlength)</li>
+            <li><span class="status pass">✓</span> Password matching validation with JavaScript</li>
+            <li><span class="status pass">✓</span> Labels linked with for and id attributes</li>
+            <li><span class="status pass">✓</span> Alt text for all images (placeholders included)</li>
+            <li><span class="status pass">✓</span> Form redirects to thankyou.html after submission</li>
+            <li><span class="status pass">✓</span> AI documentation file (.prompt/dev_notes.md) created</li>
+        </ul>
+    </div>
+
+    <div class="test-section">
+        <h2>Browser Testing Instructions</h2>
+        <ol>
+            <li><strong>Chrome:</strong> Open each page and test navigation, form validation, and responsive design</li>
+            <li><strong>Edge/Firefox:</strong> Repeat the same tests to ensure cross-browser compatibility</li>
+            <li><strong>Mobile Testing:</strong> Use browser dev tools to test mobile responsiveness</li>
+            <li><strong>Accessibility:</strong> Test keyboard navigation and screen reader compatibility</li>
+        </ol>
+    </div>
+
+    <div class="test-section">
+        <h2>Form Testing</h2>
+        <p>Test the contact form with these scenarios:</p>
+        <ul>
+            <li>Submit with empty fields (should show validation errors)</li>
+            <li>Submit with invalid email format</li>
+            <li>Submit with mismatched passwords</li>
+            <li>Submit with weak password (should fail validation)</li>
+            <li>Submit with all valid data (should redirect to thankyou.html)</li>
+        </ul>
+    </div>
+
+    <div class="test-section">
+        <h2>Notes</h2>
+        <p><span class="status warning">⚠</span> <strong>Images:</strong> Placeholder image paths are included. Add actual images to the /images directory for production.</p>
+        <p><span class="status warning">⚠</span> <strong>Contact Info:</strong> Update email addresses, phone numbers, and social media links with actual information.</p>
+        <p><span class="status warning">⚠</span> <strong>Resume PDF:</strong> Add an actual resume.pdf file for the download link.</p>
+    </div>
+</body>
+</html>
+
+
